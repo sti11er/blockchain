@@ -78,6 +78,6 @@ curl http://localhost:5001/chain
 ```
 
 просмотр наших денег
-``
+```
 curl http://localhost:5001/my_money
 ```
