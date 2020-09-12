@@ -77,6 +77,14 @@ curl http://localhost:5001/mine
 curl http://localhost:5001/chain
 ```
 
+обновление нашей цепочки на более длинную если такая есть
+```
+curl -X POST -H "Content-Type: application/json" -d '{
+ "server": "http://localhost:5000/",
+ "client": "http://localhost:5001/"
+}' "http://localhost:5001/chain_update"
+```
+
 просмотр наших денег
 ```
 curl http://localhost:5001/my_money
